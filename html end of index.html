@@ -1,0 +1,146 @@
+<!-- Home Top -->
+
+<!-- Start of Isotope -->
+
+<section class="allContent"> 
+
+
+
+
+<!-- TESTING GRID TILES
+
+<article class="isoBlock full">
+			<div class="squareMe contentChunk instagramBlock">
+				<div class="curtain"></div>
+				<div class="blockInterior">
+					<div class="instagramCopy">
+						<p>TEST</p>
+						<a class="detailLink" href="https://instagram.com/p/8JNiG6SnAs/">1 day ago</a>
+            	    </div>
+            	    <div class="seeMore"><a class="listingLink internal" href="ig.html">Instagram</a></div>
+            	    <div class="instagramImage" style="background: url(media/article-images/mid/G.jpg) center center no-repeat; background-size: cover;"></div>
+            	</div>
+        	</div>
+        </article>
+-->
+
+
+
+<!--
+		<article class="isoBlock">
+			<div class="squareMe contentChunk instagramBlock">
+				<div class="curtain"></div>
+				<div class="blockInterior">
+					<div class="instagramCopy">
+						<p>LTBGF!</p>
+						<a class="detailLink" href="https://instagram.com/p/8JNiG6SnAs/">1 day ago</a>
+            	    </div>
+            	    <div class="seeMore"><a class="listingLink internal" href="ig.html">Instagram</a></div>
+            	    <div class="instagramImage" style="background: url(https://scontent-fra3-1.cdninstagram.com/hphotos-xaf1/t51.2885-15/e15/12070906_685661328202103_1351110568_n.jpg) center center no-repeat; background-size: cover;"></div>
+            	</div>
+        	</div>
+        </article>
+		
+
+
+		<article class="isoBlock">
+			<div class="squareMe contentChunk gigBlock">
+				<div class="curtain"></div>
+				<div class="blockInterior">
+					<div class="giginfo">
+						<h4 class="daymonth">12/12<h4>
+						<h5 class="venue">Privatklub</h5>
+						<h6 class="citycountry">Berlin, Germany</h6>
+					</div>
+					
+				</div>
+				<div class="seeMore"><a class="internal listingLink" href="live.html">Tour</a></div>
+			</div>
+		</article>
+
+
+-->
+</section> 
+
+
+
+<!-- iso end -->
+
+
+<div class="bottomMargin"></div>
+
+</main>
+
+
+
+
+
+<!-- JS -->
+
+<script src="./assets/js/plugins.js"></script>
+<script src="./assets/js/main.js?v=20151001"></script>
+
+
+
+
+
+<div id="scripts">
+<script>
+
+var is_total = 60;
+var is_length = 12;
+var is_pages = Math.ceil(is_total/is_length);
+
+$(document).ready(function() {
+
+	var is_nextpage = is_length;
+	var $is_container = $(".allContent");
+	load = true;
+	
+	$(window).unbind("scroll");
+	$(window).scroll(function()
+	{
+		if (is_nextpage/is_length <= (is_pages-1))
+		{
+			if( $(window).scrollTop() > ($is_container.offset().top+$is_container.height()-$(window).height()-$(window).height()))
+			{
+				if(scroll != 1)
+				{
+					if(load == true)
+					{
+						load = false;
+						var timeOut = setTimeout(function()
+						{
+						}, 10000);
+            			var page = is_nextpage / is_length + 1;
+						var newItems = $("<div />");
+						$(newItems).load("/gb/home/" + page +" .allContent", function() {
+							$(".allContent").isotope("insert", newItems.find(".allContent"));
+							is_nextpage = is_nextpage + is_length;
+							clearTimeout(timeOut);
+							load = true;
+							animEntry();
+							waypointHolder();
+							centerItems();
+						});
+					}
+				}
+			}
+		}	
+	});
+});
+
+</script>
+</div>
+
+
+
+<!--.scripts-->
+
+
+
+<div id="bodyclass" rel="home clearNavigation"></div>
+
+
+</body>
+</html>

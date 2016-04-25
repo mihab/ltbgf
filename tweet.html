@@ -1,0 +1,617 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+        <title>LTBGF | Tweets</title>
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+        <meta name="viewport" content="width=device-width" />
+       
+<!-- favicon catch add ?v=1 to call newest verison but remove b4 deploy -->		
+<link rel="icon" type="image" href="favicon.ico" />
+
+<!-- SEO -->	
+        <meta property="og:title" content="" />
+        <meta property="og:site_name" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content=""  />
+        <meta property="og:url" content="" />
+        <meta property="og:description" content="" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="" />
+        
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@ltbgf" />
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:description" content="" />
+        <meta name="twitter:creator" content="@ltbgf" />
+        <meta name="twitter:image:src" content="" />
+
+        <link rel="stylesheet" href="./assets/styles/main.css?v=20141010" type="text/css" />
+        <script src="./assets/js/jquery2.js"></script>     
+
+<!-- google apis ... TO BE DELETED?-->
+<!--
+<script src="https://apis.google.com/js/platform.js"></script>
+-->
+
+<!--[if IE]> 
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+        
+        <body id="body" class="twitterList clearNavigation">
+        <div id="fb-root"></div>
+
+        <header class="hideHeader">
+            <a class="internal" href="index.html">
+                <h1>LTBGF</h1>
+				
+              <!-- vector grafik -->
+
+<svg version="1.1" 
+class="headerLogo"   
+xmlns="http://www.w3.org/2000/svg" 
+xmlns:xlink="http://www.w3.org/1999/xlink"	 
+x="0px" y="0px" 
+width="297.042px" 
+height="27.247" 
+preserveAspectRatio="xMinYMin meet" 
+viewBox="0 0 297.042 27.247"
+enable-background="new 0 0 297.042 27.247" 
+xml:space="preserve">
+
+	<path id="L" class="letter" d="M225.581,8.754c-0.41-1.77-1.412-3.006-3.006-3.709c-0.891-0.387-1.881-0.58-2.971-0.58c-2.086,0-3.8,0.787-5.142,2.36
+		s-2.013,3.938-2.013,7.096c0,3.181,0.727,5.433,2.18,6.755c1.453,1.321,3.105,1.982,4.957,1.982c1.816,0,3.305-0.521,4.465-1.564
+		c1.16-1.041,1.875-2.407,2.145-4.096h-5.994v-4.325h10.793v13.905h-3.586l-0.545-3.234c-1.043,1.225-1.98,2.088-2.812,2.59
+		c-1.43,0.875-3.188,1.312-5.273,1.312c-3.434,0-6.246-1.189-8.438-3.566c-2.285-2.389-3.428-5.656-3.428-9.803
+		c0-4.192,1.154-7.553,3.463-10.083S215.737,0,219.534,0c3.293,0,5.938,0.835,7.937,2.505s3.144,3.753,3.437,6.249H225.581z"/>
+	<path id="T" class="letter" d="M157.92,3.428c0.793,1.102,1.189,2.42,1.189,3.955c0,1.582-0.4,2.854-1.2,3.814c-0.447,0.539-1.105,1.031-1.977,1.477
+		c1.322,0.48,2.32,1.242,2.993,2.285c0.673,1.043,1.01,2.309,1.01,3.797c0,1.535-0.385,2.912-1.153,4.131
+		c-0.49,0.809-1.102,1.488-1.836,2.039c-0.827,0.633-1.803,1.066-2.927,1.301c-1.125,0.234-2.345,0.352-3.661,0.352h-11.675V0.668
+		h12.521C154.365,0.715,156.603,1.635,157.92,3.428z M143.852,5.168v5.713h6.297c1.125,0,2.038-0.214,2.74-0.642
+		c0.701-0.428,1.053-1.187,1.053-2.276c0-1.207-0.464-2.004-1.392-2.391c-0.801-0.27-1.821-0.404-3.062-0.404H143.852z
+		 M143.852,15.17v6.909h6.29c1.124,0,1.998-0.152,2.624-0.457c1.135-0.562,1.703-1.641,1.703-3.234c0-1.348-0.551-2.273-1.651-2.778
+		c-0.613-0.281-1.477-0.428-2.589-0.439H143.852z"/>
+	<path id="B" class="letter" d="M88.026,0.668v4.588h-7.752v21.323h-5.449V5.256h-7.787V0.668H88.026z"/>
+	<path id="G" class="letter" d="M278.567,0.703h18.475v4.553h-13.096v5.959h11.479v4.5h-11.479v10.864h-5.379V0.703z"/>
+	<path id="F" class="letter" d="M0,0.668h5.414V21.92h12.938v4.658H0V0.668z"/>     
+</svg>
+            </a>
+        </header>
+
+        <div id="menuButton" class="nav-button">
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+
+ <section class="navHolder">
+<div class="navigationHolder">
+<nav class="mainNav">
+<a href="index.html">
+<span class="navInitial">Home</span>
+<span class="navSecondary">Home</span>
+</a>
+<a href="news.html">
+<span class="navInitial">News</span>
+<span class="navSecondary">News</span>
+</a>
+<a href="live.html">
+<span class="navInitial">Live</span>
+<span class="navSecondary">Live</span>
+</a>
+<a href="release.html">
+<span class="navInitial">Releases</span>
+<span class="navSecondary">Releases</span>
+</a>
+<a href="video.html">
+<span class="navInitial">Videos</span>
+<span class="navSecondary">Videos</span>
+</a>
+<a href="http://www.ltbgf.bigcartel.com/">
+<span class="navInitial">Store</span>
+<span class="navSecondary">Store</span>
+</a>
+<!--
+<a href="http://smarturl.it/CalvinHarrisStore">
+<span class="navInitial">Merch</span>
+<span class="navSecondary">Merch</span>
+</a>
+-->
+<a href="nl.html">
+<span class="navInitial">Newsletter</span>
+<span class="navSecondary">Newsletter</span>
+</a>
+</nav>
+</div> 
+
+<!-- navigation Holder -->
+<!-- youtube -->
+                    <div class="navFooter">
+                            <div class="navBottomContent">
+                                <h5>Follow</h5>
+                                <div class="followbuttons">
+                                    <div id="followonyoutube">
+                                        <div id="frontyoutube"></div>
+                                        <div id="backyoutube">
+                                            <div class="g-ytsubscribe" data-channel="LTBGFVEVO"></div>
+                                        </div>
+                                    </div>
+<!-- fb -->									
+                                    <div id="likeonfacebook">
+                                        <div id="frontfb"></div>
+                                        <div id="backfb">
+                                            <div class="fb-like" data-href="https://www.facebook.com/ltbgf" data-width="100px" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                                        </div>
+                                    </div>
+<!-- twitter -->									
+                                    <div id="followontwitter">
+                                        <div id="fronttwitter"></div>
+                                        <div id="backtwitter">
+                                            <a href="https://twitter.com/ltbgf" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @ltbgf</a>
+                                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                                        </div>
+                                    </div>
+<!-- spotify -->
+                                    <a href="" target="_blank"><div id="followonspotify"></div></a>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                            <nav class="socialNav">
+
+<!-- create links with smarturl.it for tracking -->
+                                <a href=" http://smarturl.it/LTBGFfacebook?IQid=website " id="navFacebook" target="_blank"><span>Facebook</span></a>
+                                <a href=" http://smarturl.it/LTBGFtwitter?IQid=website " id="navTwitter" target="_blank"><span>Twitter</span></a>
+                                <a href="http://smarturl.it/LTBGFinstagram?IQid=website" id="navInstagram" target="_blank"><span>Instagram</span></a>
+                                <a href="" id="navYoutube" target="_blank"><span>Youtube</span></a>
+                             
+			    <div class="clear"></div>
+                            </nav>
+                            <h6 id="shitwhore">&#169; 2015 LTBGF Records</h6>
+                            <a id="privacy" href="http://www.ltbgf.com/">Privacy Policy</a>
+                    </div>
+        </section> 
+<!-- navHolder -->
+
+        <div class="loading"></div>
+
+       <div class="headerspacer"></div>
+
+        <div class="closeWindow"></div>
+
+       <main id="main">
+
+        <!--<div class="contentwrap"> -->
+
+
+<!-- Start of Isotope -->
+<section class="allContent">
+
+		<a class="detailLink" href="https://twitter.com/CalvinHarris/status/619248224491048961" target="_blank">
+			<article class="isoBlock w2">
+				<div class="thinwide contentChunk tweetBlock">
+					<div class="blockInterior">
+						<div class="seeMore"></div>
+						<div class="tweetCopy">
+							<p>Very excited for this! <a href="http://t.co/2c2AUHhg83">pic.twitter.com/2c2AUHhg83</a><br/><div class="tweetDate">3 months ago</div></p>
+						</div>
+					</div>
+				</div>
+			</article>
+		</a>
+		<a class="detailLink" href="https://twitter.com/CalvinHarris/status/617507134444453888" target="_blank">
+			<article class="isoBlock w2">
+				<div class="thinwider contentChunk tweetBlock">
+					<div class="blockInterior">
+						<div class="seeMore"></div>
+						<div class="tweetCopy">
+							<p>Great time at Wet Republic today Las Vegas!! Getting ready for Omnia tonight!<br/><div class="tweetDate">4 months ago</div></p>
+						</div>
+					</div>
+				</div>
+			</article>
+		</a>
+		<a class="detailLink" href="https://twitter.com/CalvinHarris/status/617043903359938560" target="_blank">
+			<article class="isoBlock w2">
+				<div class="squareMe contentChunk tweetBlock">
+					<div class="blockInterior">
+						<div class="seeMore"></div>
+						<div class="tweetCopy">
+							<p><a href="http://t.co/7ao2x2MWq3">pic.twitter.com/7ao2x2MWq3</a><br/><div class="tweetDate">4 months ago</div></p>
+						</div>
+					</div>
+				</div>
+			</article>
+		</a>
+		<a class="detailLink" href="https://twitter.com/CalvinHarris/status/616714446522585091" target="_blank">
+			<article class="isoBlock w2">
+				<div class="thinwide contentChunk tweetBlock">
+					<div class="blockInterior">
+						<div class="seeMore"></div>
+						<div class="tweetCopy">
+							<p>Big 4th of July coming up in Las Vegas for me: Wet Republic during the day and Omnia at night! <a href="https://t.co/mYBvluyd2U">instagram.com/p/4pfIASN3P9/</a><br/><div class="tweetDate">4 months ago</div></p>
+						</div>
+					</div>
+				</div>
+			</article>
+		</a>
+
+		<a class="detailLink" href="https://twitter.com/CalvinHarris/status/615963391891513344" target="_blank">
+			<article class="isoBlock w2">
+				<div class="thinwide contentChunk tweetBlock">
+					<div class="blockInterior">
+						<div class="seeMore"></div>
+						<div class="tweetCopy">
+							<p><a href="http://t.co/hmA2PNcB9x">pic.twitter.com/hmA2PNcB9x</a><br/><div class="tweetDate">4 months ago</div></p>
+						</div>
+					</div>
+				</div>
+			</article>
+		</a>
+		<a class="detailLink" href="https://twitter.com/CalvinHarris/status/615531581793505280" target="_blank">
+			<article class="isoBlock w2">
+				<div class="thinwider contentChunk tweetBlock">
+					<div class="blockInterior">
+						<div class="seeMore"></div>
+						<div class="tweetCopy">
+							<p><br/><div class="tweetDate">4 months ago</div></p>
+						</div>
+					</div>
+				</div>
+			</article>
+		</a>
+		<a class="detailLink" href="https://twitter.com/CalvinHarris/status/615168682831020032" target="_blank">
+			<article class="isoBlock w2">
+				<div class="squareMe contentChunk tweetBlock">
+					<div class="blockInterior">
+						<div class="seeMore"></div>
+						<div class="tweetCopy">
+							<p>Bråvalla festival last night in Sweden! <a href="https://t.co/aBfyqj4brI">instagram.com/p/4egMUqt3Hk/</a><br/><div class="tweetDate">4 months ago</div></p>
+						</div>
+					</div>
+				</div>
+			</article>
+		</a>
+		<a class="detailLink" href="https://twitter.com/CalvinHarris/status/614985704695795712" target="_blank">
+			<article class="isoBlock w2">
+				<div class="thinwide contentChunk tweetBlock">
+					<div class="blockInterior">
+						<div class="seeMore"></div>
+						<div class="tweetCopy">
+							<p>Motion is double platinum in Sweden! Thank you!!! And thank you Sony Music Sweden! <a href="https://t.co/3RnXJWLB6L">instagram.com/p/4dM_Act3O3/</a><br/><div class="tweetDate">4 months ago</div></p>
+						</div>
+					</div>
+				</div>
+			</article>
+		</a>
+
+		<a class="detailLink" href="https://twitter.com/CalvinHarris/status/614870947938598912" target="_blank">
+			<article class="isoBlock w2">
+				<div class="thinwide contentChunk tweetBlock">
+					<div class="blockInterior">
+						<div class="seeMore"></div>
+						<div class="tweetCopy">
+							<p>On my way to Bråvalla festival!!! <br/><div class="tweetDate">4 months ago</div></p>
+						</div>
+					</div>
+				</div>
+			</article>
+		</a>
+		<a class="detailLink" href="https://twitter.com/CalvinHarris/status/614765296587513856" target="_blank">
+			<article class="isoBlock w2">
+				<div class="thinwider contentChunk tweetBlock">
+					<div class="blockInterior">
+						<div class="seeMore"></div>
+						<div class="tweetCopy">
+							<p>Tinderbox Festival, Denmark last night! <a href="https://t.co/RxE8uiYurs">instagram.com/p/4bowI1t3Ps/</a><br/><div class="tweetDate">4 months ago</div></p>
+						</div>
+					</div>
+				</div>
+			</article>
+		</a>
+		<a class="detailLink" href="https://twitter.com/CalvinHarris/status/614462524872855552" target="_blank">
+			<article class="isoBlock w2">
+				<div class="squareMe contentChunk tweetBlock">
+					<div class="blockInterior">
+						<div class="seeMore"></div>
+						<div class="tweetCopy">
+							<p>Theses records went platinum in Finland! Thank you sonymusicfinland. Buzzing <a href="https://t.co/4WHbRKtmss">instagram.com/p/4ZfEZGt3J5/</a><br/><div class="tweetDate">4 months ago</div></p>
+						</div>
+					</div>
+				</div>
+			</article>
+		</a>
+		<a class="detailLink" href="https://twitter.com/CalvinHarris/status/613246853518200832" target="_blank">
+			<article class="isoBlock w2">
+				<div class="thinwide contentChunk tweetBlock">
+					<div class="blockInterior">
+						<div class="seeMore"></div>
+						<div class="tweetCopy">
+							<p>Las Vegas O M N I A tonight!!!!<br/><div class="tweetDate">4 months ago</div></p>
+						</div>
+					</div>
+				</div>
+			</article>
+		</a>
+
+		<a class="detailLink" href="https://twitter.com/CalvinHarris/status/612907274038738944" target="_blank">
+			<article class="isoBlock w2">
+				<div class="thinwide contentChunk tweetBlock">
+					<div class="blockInterior">
+						<div class="seeMore"></div>
+						<div class="tweetCopy">
+							<p>I just played a gig inside a giant owl and my girl just changed the entire music industry what a day<br/><div class="tweetDate">4 months ago</div></p>
+						</div>
+					</div>
+				</div>
+			</article>
+		</a>
+		<a class="detailLink" href="https://twitter.com/CalvinHarris/status/612898023794872320" target="_blank">
+			<article class="isoBlock w2">
+				<div class="thinwider contentChunk tweetBlock">
+					<div class="blockInterior">
+						<div class="seeMore"></div>
+						<div class="tweetCopy">
+							<p>Thank you EDC !!<br/><div class="tweetDate">4 months ago</div></p>
+						</div>
+					</div>
+				</div>
+			</article>
+		</a>
+		<a class="detailLink" href="https://twitter.com/CalvinHarris/status/610133949226954752" target="_blank">
+			<article class="isoBlock w2">
+				<div class="squareMe contentChunk tweetBlock">
+					<div class="blockInterior">
+						<div class="seeMore"></div>
+						<div class="tweetCopy">
+							<p>@<a href="https://twitter.com/davidguetta" title="David Guetta">davidguetta</a> lol<br/><div class="tweetDate">4 months ago</div></p>
+						</div>
+					</div>
+				</div>
+			</article>
+		</a>
+		<a class="detailLink" href="https://twitter.com/CalvinHarris/status/609122876399075328" target="_blank">
+			<article class="isoBlock w2">
+				<div class="thinwide contentChunk tweetBlock">
+					<div class="blockInterior">
+						<div class="seeMore"></div>
+						<div class="tweetCopy">
+							<p>@<a href="https://twitter.com/LibertyCarter" title="Libby">LibertyCarter</a> happy birthdaaaaay! relaaaax<br/><div class="tweetDate">4 months ago</div></p>
+						</div>
+					</div>
+				</div>
+			</article>
+		</a>
+
+		<a class="detailLink" href="https://twitter.com/CalvinHarris/status/608755184303366144" target="_blank">
+			<article class="isoBlock w2">
+				<div class="thinwide contentChunk tweetBlock">
+					<div class="blockInterior">
+						<div class="seeMore"></div>
+						<div class="tweetCopy">
+							<p><a href="https://t.co/tU8lCEPZ9f">youtube.com/watch?v=uqbIGW&hellip;</a><br/><div class="tweetDate">4 months ago</div></p>
+						</div>
+					</div>
+				</div>
+			</article>
+		</a>
+		<a class="detailLink" href="https://twitter.com/CalvinHarris/status/607958056522018816" target="_blank">
+			<article class="isoBlock w2">
+				<div class="thinwider contentChunk tweetBlock">
+					<div class="blockInterior">
+						<div class="seeMore"></div>
+						<div class="tweetCopy">
+							<p>Feels good to be recognised as an early adopter. Of an Instagram account. Obviously preferred when he was underground <a href="http://t.co/QUp1vCKhkM">pic.twitter.com/QUp1vCKhkM</a><br/><div class="tweetDate">4 months ago</div></p>
+						</div>
+					</div>
+				</div>
+			</article>
+		</a>
+		<a class="detailLink" href="https://twitter.com/CalvinHarris/status/606526289462337536" target="_blank">
+			<article class="isoBlock w2">
+				<div class="squareMe contentChunk tweetBlock">
+					<div class="blockInterior">
+						<div class="seeMore"></div>
+						<div class="tweetCopy">
+							<p><a href="http://t.co/cO63HdosNV">smarturl.it/HowDeepIsYourL&hellip;</a><br/><div class="tweetDate">5 months ago</div></p>
+						</div>
+					</div>
+				</div>
+			</article>
+		</a>
+		<a class="detailLink" href="https://twitter.com/CalvinHarris/status/605856247280107520" target="_blank">
+			<article class="isoBlock w2">
+				<div class="thinwide contentChunk tweetBlock">
+					<div class="blockInterior">
+						<div class="seeMore"></div>
+						<div class="tweetCopy">
+							<p>Me at Glamour awards tonight standing next to someone more interesting on my right &amp; I won Man of the… <a href="https://t.co/G263X05rYs">instagram.com/p/3cVYyXN3Oh/</a><br/><div class="tweetDate">5 months ago</div></p>
+						</div>
+					</div>
+				</div>
+			</article>
+		</a>
+
+
+</section>
+
+
+        <div class="bottomMargin"></div>
+
+</main>
+
+<script src="/assets/js/plugins.js"></script>
+<script src="/assets/js/main.js?v=20141010"></script>
+
+<div id="scripts"><script>
+
+var is_total = 2823;
+var is_length = 20;
+var is_pages = Math.ceil(is_total/is_length);
+var faded = 0;
+
+$(document).ready(function() {
+
+	var is_nextpage = is_length;
+	var $is_container = $(".allContent");
+	load = true;
+	
+	$(window).unbind("scroll");
+	$(window).scroll(function()
+	{
+		if (is_nextpage/is_length <= (is_pages-1))
+		{
+			if( $(window).scrollTop() > ($is_container.offset().top+$is_container.height()-$(window).height()-$(window).height()))
+			{
+				if(scroll != 1)
+				{
+					if(load == true)
+					{
+						load = false;
+						var timeOut = setTimeout(function()
+						{
+						}, 10000);
+            			var page = is_nextpage / is_length + 1;
+						var newItems = $("<div />");
+						$(newItems).load("/gb/tweets .allContent", { p:page }, function() {
+							$(".allContent").isotope("insert", newItems.find(".allContent"));
+							is_nextpage = is_nextpage + is_length;
+							clearTimeout(timeOut);
+							load = true;
+							animEntry();
+							waypointHolder();
+						});
+					}
+				}
+			}
+		}	
+	});
+});
+
+</script></div><!--.scripts-->
+<div id="bodyclass" rel="twitterList clearNavigation"></div>
+
+<!-- SONY MUSIC GOOGLE ANALYTICS TRACKING -->
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+    (function() {
+       var e = document.createElement("script");
+       e.type = "text/javascript"; e.async = true;
+       e.src = "http" + (document.location.protocol === "https:" ? "s://ssl" : "://") + "tag.myplay.com/t/a/" + document.location.hostname;
+       var s = document.getElementsByTagName("script")[0];
+       s.parentNode.insertBefore(e, s);
+     })();
+//--><!]]>
+</script>
+
+<script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '//connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+  _fbq.push(['addPixelId', '225865057601412']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=225865057601412&amp;ev=PixelInitialized" /></noscript>
+
+<!-- Google Code for Calvin Harris Official Site Conversion Page -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1012054806;
+var google_conversion_label = "HJdQCIKwxAMQlvbK4gM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1012054806/?value=1.00&currency_code=USD&label=HJdQCIKwxAMQlvbK4gM&guid=ON&script=0"/>
+</div>
+</noscript>
+
+<!— CH ANALYTICS -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ 
+  ga('create', 'UA-65368016-1', 'auto');
+  ga('send', 'pageview');
+ 
+</script>
+ 
+Conversion Tracking:
+ 
+<!— CH CONVERSION -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 944430827;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "qSLaCJz9xV4Q672rwgM";
+var google_remarketing_only = false;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/944430827/?label=qSLaCJz9xV4Q672rwgM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+ 
+Google Remarketing:
+ 
+<!— CH REMARKETING -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 944430827;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/944430827/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+ 
+Facebook Remarketing
+ 
+<!— CH FB REMARKETING -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+ 
+fbq('init', '1619813631628610');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1619813631628610&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+</body>
+</html>
